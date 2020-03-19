@@ -27,7 +27,6 @@ p {
 
 .nav {
     text-align: center;
-    /*mitä*/
     grid-area: nav;
     height: 50px;
     width: 100%;
