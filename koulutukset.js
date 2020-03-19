@@ -1,0 +1,24 @@
+$.getJSON('content.json', function(data) {
+    document.getElementById('turva1').innerHTML = data.turva.title;
+    document.getElementById('turva2').innerHTML = data.turva.des;
+    document.getElementById('turva3').innerHTML = data.turva.title2;
+    document.getElementById('turva4').innerHTML = data.turva.cont1;
+    document.getElementById('turva5').innerHTML = data.turva.title3;
+    document.getElementById('turva6').innerHTML = data.turva.title4;
+    document.getElementById('tuli1').innerHTML = data.tuli.title;
+    document.getElementById('tuli2').innerHTML = data.tuli.des;
+    document.getElementById('tuli3').innerHTML = data.tuli.title2;
+    document.getElementById('tuli4').innerHTML = data.tuli.des2;
+    document.getElementById('tuli5').innerHTML = data.tuli.title3;
+    document.getElementById('tuli6').innerHTML = data.tuli.des3;
+    document.getElementById('tuli7').innerHTML = data.tuli.title4;
+    document.getElementById('sam1').innerHTML = data.sammutus.title;
+    document.getElementById('sam2').innerHTML = data.sammutus.title2;
+    document.getElementById('sam3').innerHTML = data.sammutus.des;
+    document.getElementById('sam4').innerHTML = data.sammutus.title3;
+    document.getElementById('sam5').innerHTML = data.sammutus.des2;
+    document.getElementById('sam6').innerHTML = data.sammutus.title4;
+    document.getElementById('sam7').innerHTML = data.sammutus.des3;
+    document.getElementById('footer1').innerHTML = data.footer1.cont;
+    document.getElementById('footer2').innerHTML = data.footer2.cont;
+    })

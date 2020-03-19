@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=fi>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>A2SAFE</title>
+        
+        <link rel="stylesheet" type="text/css" 
+		media="only screen and (min-width:500px)" 
+		href="big.css" />
+        <link rel="stylesheet" type="text/css" 
+		media="only screen and (max-width:500px)" 
+		href="small.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="etusivu.js"></script>
+    </head>
+    <body>
+        <div class="grid-container" >
+            <div class="header">
+                <h1>A2SAFE</h1> <!-- picture of the company's logo ??-->
+            </div>
+
+            <div class="nav">
+                    <a href="etusivu.html">Etusivu</a>
+                    <div class="floating-buttons">
+                        <div class="dropdown">
+                            <a id="current" href="koulutukset.html">Koulutukset</a>
+                            <div class="dropdown-content">
+                                    <a href="koulutukset.html#työ">Työturvallisuuskortti</a>
+                                    <a href="koulutukset.html#tuli">Tulityökortti</a>
+                                    <a href="koulutukset.html#sammutus">Alkusammutuskurssi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="yhteystiedot.html">Yhteystiedot</a>
+                </div>
+
+            <div class="page-content"> <!-- WEB PAGE-CONTENT STARTS-->
+                <div class="introduction">
+                    <p id="introduction"></p>
+                </div>
+
+                <div class="info">
+                <p id="info"></p>
+                </div>
+                <div class="persons">
+                    <div class="person-box">
+                        <img src="lock.png" alt="Person icon" class ="person_img">
+                        <br>
+                        <h2 id="name1"></h2>
+                        <p id="person1"></p>
+                    </div>
+
+
+                    <div class="person-box">
+                        <img src="lock.png" alt="Person icon" class ="person_img" >
+                        <br>
+                        <h2 id="name2"></h2>
+                        <p id="person2"></p> 
+                    </div>
+                </div>                    <!-- WEB PAGE-CONTENT ENDS  -->
+
+            <div class="footer">
+                <div class="footer-box">
+                    <p id="footer1"></p>
+                </div>
+                <div class="footer-box">
+                    <p id="footer2"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 

@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box; /* ottaa huomioon borderin ja paddingin leveyttä määrittäessä*/
+    margin: 0;              /* Remove browser's default margin and padding */
+    padding: 0;
+    background-color: #1b4152;
+    
+}
+
+.header {
+    grid-area: header;
+    height: 85px;
+    position: fixed; /* stays always top of the screen*/
+    top: 0;
+    width: 100%;
+    background-color:#49788c;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header > h1 {
+    text-align: center;
+    font-family: Arial;
+}
+
+.nav {
+    text-align: center;
+    /*mitä*/
+    grid-area: nav;
+    height: 50px;
+    width: 100%;
+    position: fixed; /* stays always top of the screen */
+    margin-top: 35px;
+    display: inline-flex;
+    background-color: #49788c;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 15px 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    overflow: hidden;
+    color: white; 
+    background-color: #1b4152;
+}
+
+/*mitä tekee?*/
+a:link {
+    
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+}
+
+/* Short description about company */
+#introduction {
+    color: #1b4152;
+    text-align: center;
+    font-size: 25px;
+    padding: 50px 5px 50px 5px;
+    grid-area: intro;
+    height: auto;
+    width: 100%;
+    display: inline-block; /* centers the div*/
+    background-image: url("chains.jpg");
+    font-weight: bold;
+}
+
+/* information about company*/
+#info {
+    grid-area: info;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0px 30px 0px;
+    color: white;
+    
+}
+
+/* owners description boxes*/
+.person-box {
+    grid-area: info;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0px 30px 0px;
+}
+
+.person-box h2 {
+    color: white;
+    padding: 10px;
+}
+
+.person-box p {
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #49788c;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+
+}
+
+
+.footer-box {
+    padding: 30px 10px 0px 10px;
+    width: 100%;
+    vertical-align: middle;
+    color: white !important; /* overrides default color */
+    margin: 0 auto;
+    background-color: #49788c;
+}
+
+#footer1, #footer2 {
+    background-color: #49788c;
+    font-size: 18px;
+}
+
+#footer2 {
+    padding-bottom: 30px;
+}
+
+.page-content {
+    text-align: center;
+    margin-top: 100px;
+    list-style: none;
+}
+
+.page-content div {
+    margin: 5px 5px;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    grid-template-rows: auto; /* The size of the rows is determined by the size of the container, and on the size of the content of the items in the row */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'page-content page-content page-content page-content'
+    'footer footer footer footer';
+}
+
+/* koulutukset sivuilla olevat kuvaukset koulutuksista*/
+/* Descriptions of trainings on koulutukset -page*/
+.training-box {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* yhteystiedot sivulla olevat yhteystiedot*/
+/*dropdown*/
+.contact-information {
+    font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-content{display: none;}
+
+.dropdown-content a {display: none;}
+
+/* DROPDOWN nav ENDS*/
+
+.person_img {
+    width: 200px;
+}
+
+h3, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.training * {
+    display: inline-block;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 2%;
+    color: white;
+    text-align: left;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 2px white;
+}
+.trainingpic {
+    max-width: 95%;
+    align-content: center;
+}
+
+.contact-us * {
+    color: white;
+}
+
+.contact-information * {
+    color: white;
+    padding: 10px;
+}
+
+textarea {
+    width: 80%;
+    height: 200px;
+}
+
+/* Embedded Google map in Contact information -page*/
+.mapouter {
+    margin: auto !important; /* Overrides default margin*/
+    margin-bottom: 20px !important; /* Overrides defalt margin-bottom */
+}

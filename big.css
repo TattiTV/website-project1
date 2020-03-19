@@ -1,0 +1,311 @@
+/* A2SAFE homepage made with Grid layout system*/
+
+* {
+    box-sizing: border-box; /* ottaa huomioon borderin ja paddingin leveyttä määrittäessä*/
+    margin: 0;              /* Remove browser's default margin and padding */
+    padding: 0;
+    
+}
+
+.header {
+    grid-area: header;
+    height: 85px;
+    position: fixed; /* stays always top of the screen*/
+    top: 0;
+    width: 100%;
+    background-color: #1b4152;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header > h1 {
+    text-align: center;
+    font-family: 'Arial black';
+    font-size: 32px;
+}
+
+.nav {
+    text-align: center;
+    grid-area: nav;
+    height: 50px;
+    width: 100%;
+    position: fixed; /* stays always top of the screen */
+    margin-top: 35px;
+    display: inline-block;
+    background-color: #1b4152;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.floating-buttons {
+    position: relative;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 15px 50px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    float: center;
+    width: 300px;
+    overflow: hidden;
+    color: white !important;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+}
+
+
+a:link {
+    color: #a2b7d9;
+    text-decoration: none;
+        transition: color 0.3s linear;
+        -webkit-transition: color 0.3s linear;
+        -moz-transition: color 0.3s linear;
+} 
+
+a:hover {
+    text-decoration: none;
+    color: #49788c;
+}
+
+/* Short description about company */
+.introduction {
+    background-color: #b9cbe9;
+    text-align: center;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 100px 50px 100px;
+    margin-top: 0px;
+    height: 180px;
+    width: 100%;
+    display: inline-block; /* centers the div*/
+    background-image: url("chains.jpg");
+}
+
+/* information about company*/
+.info * {
+    padding: 50px 200px 50px 200px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #49788c;
+    color: white;
+    width: 100%;
+}
+
+/* header element in person1 and person2 div-element*/
+.person-box h2 {
+    text-align: center;
+}
+
+/* owners description boxes*/
+.person-box {
+    display: inline-block;
+    grid-gap: 5px;
+    padding: 2%;
+    background: linear-gradient(1deg, rgba(226,238,255,1) 0%, rgba(226,238,255,1) 1%, rgba(255,255,255,1) 100%);
+    font-family: 'Roboto', sans-serif;
+    width: 35%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #1b4152;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* footer: short description(right)*/ 
+.company {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/*footer: contact information(left) */
+.contact {
+    text-align: center;
+}
+
+.footer-box {
+    padding: 3%;
+    display: inline-block; /* two div inside footer side by side*/
+    height: 200px;
+    width: 30%;
+    vertical-align: middle;
+    color: white !important; /* overrides default color */
+    margin: 0 auto;
+}
+
+.page-content {
+    text-align: center;
+    margin-top: 100px;
+    list-style: none;
+}
+
+.page-content div {
+    margin: 5px 5px;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    grid-template-rows: auto; /* The size of the rows is determined by the size of the container, and on the size of the content of the items in the row */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'page-content page-content page-content page-content'
+    'footer footer footer footer'; 
+}
+
+/* koulutukset sivuilla olevat kuvaukset koulutuksista*/
+/* Descriptions of trainings on koulutukset -page*/
+.training-box {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* yhteystiedot sivulla olevat yhteystiedot*/
+.contact-information {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* DROPDOWN nav STARTS*/
+/* - jokaisessa koulutuksessa on ankkuritunnus
+- navissa on dropdown valikko systeemi koulutuksille*/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #49788c;
+  width: 100%; /* sets dropdown as wide as the button itself*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 0.95; /* OPACITY !*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+  float: none;
+  padding: 15px 50px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+} 
+
+.dropdown-content a:hover {
+  text-decoration: none;
+  color: #a2b7d9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* DROPDOWN nav ENDS*/
+
+.person_img {
+    width: 200px;
+}
+
+h3, h2 {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;  /* 10 px under every h3 and h2 element*/
+}
+
+.training {
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    background: #49788c;
+    padding: 2%;
+}
+
+.training * {
+    padding: 10px;
+}
+
+.trainingpic {
+    width: 354px;
+}
+
+.content * {
+    padding: 20px;
+}
+
+.contact-us {
+    width: 30%;
+    display: inline-block;
+    padding: 2%;
+    background: #49788c;
+}
+.contact-information * {
+    padding: 10px;
+}
+
+textarea {
+    width: 80%;
+    height: 200px;
+}
+
+/* Embedded Google map in Contact information -page*/
+.mapouter {
+    margin: auto !important; /* Overrides default margin*/
+    margin-bottom: 20px !important; /* Overrides defalt margin-bottom */
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.lock_img {
+    width: 200px;
+}
+
+/* ALL CONTENT UNDER WAS ADDED 4.2. by Tanja*/
+
+/* p elements*/
+#turva1, #turva2, #turva3, #turva4, #turva5, #turva6 {
+    color: white;
+}
+
+/* p elements*/
+#tuli1, #tuli2, #tuli3, #tuli4, #tuli5,#tuli6, #tuli7 {
+    color: white;
+}
+
+/* p elements */
+#sam1, #sam2, #sam3, #sam4, #sam5, #sam6, #sam7 {
+    color: white;
+}
+
+/* form element's text color*/
+form {
+    color: white;
+}
+
+.contact-us h3 {
+    color: white;
+}

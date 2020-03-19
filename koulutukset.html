@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang=fi>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>A2SAFE</title>
+        
+        <link rel="stylesheet" type="text/css" 
+		media="only screen and (min-width:500px)" 
+		href="big.css" />
+        <link rel="stylesheet" type="text/css" 
+		media="only screen and (max-width:500px)" 
+		href="small.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="koulutukset.js"></script>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="header">
+                <h1>A2SAFE</h1> <!-- picture of the company's logo ??-->
+            </div>
+
+            <div class="nav">
+                <a href="etusivu.html">Etusivu</a>
+                <div class="floating-buttons">
+                    <div class="dropdown">
+                        <a id="current" href="koulutukset.html">Koulutukset</a>
+                        <div class="dropdown-content">
+                                <a href="#työ">Työturvallisuuskortti</a>
+                                <a href="#tuli">Tulityökortti</a>
+                                <a href="#sammutus">Alkusammutuskurssi</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="yhteystiedot.html">Yhteystiedot</a>
+            </div>
+
+            <div class="page-content"> <!-- WEB PAGE-CONTENT STARTS-->
+                <div class="training">
+                    <a name="työ"></a> <!-- ANCHOR -->
+                    <h2 id="turva1"></h2>
+                    <img src="turva.png" alt="Logo" class="trainingpic"> 
+                    <p id="turva2"></p>
+                    <div class="training-box"> <!-- content of the training-->
+                        <h3 id="turva3"></h3>
+                        <p id="turva4"></p>
+                        <h3 id="turva5"></h3>
+                        <h3 id="turva6"></h3>
+                    </div>
+                </div>
+
+                <div class="training">
+                    <a name="tuli"></a> <!-- ANCHOR -->
+                    <h2 id="tuli1"></h2>
+                    <img src="tulityo.png" alt="Logo" class="trainingpic"> 
+                    <p id="tuli2"></p>
+                    <h3 id="tuli3"></h3>
+                    <p id="tuli4"></p>
+                    <div class="training-box">
+                    <h3 id="tuli5"></h3>
+                    <p id="tuli6">
+                    </p>
+                    <h3 id="tuli7"></h3>
+                    </div>
+                </div>
+
+                <div class="training">
+                    <a name="sammutus"></a><!-- ANCHOR -->
+                    <h2 id="sam1"></h2>
+                    <img src="sammutus.jpg" alt="Logo" class="trainingpic"> 
+                    <div class="content">
+                        <h3 id="sam2"></h3>
+                        <p id="sam3"></p>
+                        </div>
+                        <h3 id="sam4"></h3>
+                        <p id="sam5"></p>
+                        <h3 id="sam6"></h3>
+                        <p id="sam7"></p>
+                </div>
+            </div>                     <!-- WEB PAGE-CONTENT ENDS  -->
+
+            <div class="footer">
+                <div class="footer-box">
+                    <p id="footer1"></p>
+                </div>
+                <div class="footer-box">
+                    <p id="footer2"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
