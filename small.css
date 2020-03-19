@@ -3,7 +3,6 @@
     margin: 0;              /* Remove browser's default margin and padding */
     padding: 0;
     background-color: #1b4152;
-    
 }
 
 .header {
@@ -53,7 +52,6 @@ p {
     background-color: #1b4152;
 }
 
-/*mitä tekee?*/
 a:link {
     
     transition: color 0.3s linear;
@@ -163,7 +161,6 @@ a:link {
     'footer footer footer footer';
 }
 
-/* koulutukset sivuilla olevat kuvaukset koulutuksista*/
 /* Descriptions of trainings on koulutukset -page*/
 .training-box {
     font-family: 'Roboto', sans-serif;
@@ -200,6 +197,7 @@ h3, h2 {
     padding: 10px 0px 10px 0px;
     border-bottom: 2px white;
 }
+
 .trainingpic {
     max-width: 95%;
     align-content: center;
